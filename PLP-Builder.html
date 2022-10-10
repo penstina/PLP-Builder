@@ -398,18 +398,31 @@ var fileName =  'PLP.html'; // You can use the .txt extension if you want
         font-family: sans-serif;
         color: black;
     }
+    
+    #plpContainerMobile{
+        display:none;
+    }
 
     @media (max-width:1400px) {
         .plpContainer {
             background-position: left;
         }
 
-        @media (max-width:900px) {
+        @media (max-width:600px) {
             .plpContainer {
                 background-position: center !important;
-                background-image: url(https://is1.pens.com/is//image/NatPenVegas/PLP-MobileCustom-Pens-?qlt=99&fmt=png-alpha);
+
                 background-size: cover;
             }
+            
+                 #plpContainer{
+                    display:none !important;
+                }
+                
+                #plpContainerMobile{
+                    display: block !important;
+                    background-size:100%;
+                }
 
             .textBlock {
                 width: 100%;
