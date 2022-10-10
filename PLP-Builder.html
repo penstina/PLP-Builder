@@ -1,0 +1,508 @@
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/17.0.0/classic/ckeditor.js"></script>
+    <script src=https://js.nicedit.com/nicEdit-latest.js type="text/javascript"></script>
+    <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+						
+    
+    <div class="builderContainer" style="width: 100%; display: inline-block;">
+    <div class="builderInput" style="position:absolute;">
+        
+       
+        <script>
+   
+            
+            $(document).ready(function() {
+    $("#submit").click(function() {
+        $("a#mainLink").prop("href",(linkInput).value + "?utm_source={(meta:utm_source)}&amp;utm_medium={(meta:utm_medium)}&amp;utm_campaign={(meta:utm_campaign)}&amp;utm_term=guarantee&amp;npid={(hashed_email)}");
+        console.log("Hyperlink Changed");
+    })
+});
+                        
+   
+            
+        $(document).ready(function() {
+    $("#submitSubLink").click(function() {
+        $("a.submessageLink").prop("href",(submessageLinkInput).value + "?utm_source={(meta:utm_source)}&amp;utm_medium={(meta:utm_medium)}&amp;utm_campaign={(meta:utm_campaign)}&amp;utm_term=guarantee&amp;npid={(hashed_email)}");
+        console.log("Hyperlink Changed");
+    })
+});        
+                 
+        $(document).ready(function() {
+    $("#submitSubLink2").click(function() {
+        $("a.submessageLink2").prop("href",(submessageLinkInput2).value + "?utm_source={(meta:utm_source)}&amp;utm_medium={(meta:utm_medium)}&amp;utm_campaign={(meta:utm_campaign)}&amp;utm_term=guarantee&amp;npid={(hashed_email)}");
+        console.log("Hyperlink Changed");
+    })
+});        
+             $(document).ready(function() {
+    $("#submitDesktopMainImage").click(function() {
+        $("img.desktopMainImage").prop("src",(desktopMainImageInput).value);
+       
+    })
+});
+          $(document).ready(function() {
+    $("#submitBottomBannerImage").click(function() {
+        $("img.bottomBannerImage").prop("src",(bottomBannerImageInput).value);
+       
+    })
+});
+              $(document).ready(function() {
+    $("#submitBottomMobileBannerImage").click(function() {
+        $("img.bottomMobileBannerImage").prop("src",(bottomMobileBannerImageInput).value);
+       
+    })
+});
+    
+              $(document).ready(function() {
+    $("#submitBottomMobileBannerImage2").click(function() {
+        $("img.bottomMobileBannerImage2").prop("src",(bottomMobileBannerImageInput2).value);
+       
+    })
+});
+            
+            
+            
+            function changeLinkFuntion() {
+  var changeLink = document.getElementById("linkInput").value;
+}
+             function changeSubLinkFuntion() {
+  var changeSubLink = document.getElementById("submessageLinkInput").value;
+}
+       
+
+             function changeSubLinkFuntion2() {
+  var changeSubLink2 = document.getElementById("submessageLinkInput2").value;
+}
+            
+     function burstCopyFunction() {
+  var burst = document.getElementById("burstCopyInput").value;
+  document.getElementById("burstCopy").innerHTML = burst;
+}  
+            
+             function h1CopyFunction() {
+  var h1 = document.getElementById("h1CopyInput").value;
+  document.getElementById("h1Copy").innerHTML = h1;
+}
+                  function bodyCopyFunction() {
+  var body = document.getElementById("bodyCopyInput").value;
+  document.getElementById("bodyCopy").innerHTML = body;
+}  
+                function eyebrowCopyFunction() {
+  var eyebrow = document.getElementById("eyebrowCopyInput").value;
+  document.getElementById("eyebrowCopy").innerHTML = eyebrow;
+}  
+          
+            
+  
+             
+            
+            $(function() {                       //run when the DOM is ready
+  $(".hideBurstButton").click(function() {  //use a class, since your ID gets mangled
+    $("#burstDiv").addClass("hideBurst");      //add the class to the clicked element
+  });
+});
+            
+             $(function() {                       //run when the DOM is ready
+  $(".showBurstButton").click(function() {  //use a class, since your ID gets mangled
+    $("#burstDiv").removeClass("hideBurst");      //add the class to the clicked element
+  });
+});
+           
+            
+</script>
+        <style>
+            .builderInput{
+                background-color: #fff;
+                color: black;
+                height: 100%;
+                margin: auto;
+                align-content: center;
+                font-family: red hat text;
+            }
+            .emailBuilderInput{
+               border: none;
+                
+                padding: 1% 2%;
+                background-color:#f2f2f2;
+                width:500px;
+            }
+            button.submit{
+                background-color: black;
+                color: white;
+                font-family: red hat text;
+                border-radius:  0px 999px 999px 0px ;
+                border: none;
+                padding: .71% 2%;
+                
+            }
+              button.submitAlone{
+                background-color: black;
+                color: white;
+                font-family: red hat text;
+                border-radius:  999px 999px 999px 999px ;
+                border: none;
+                padding: .71% 2%;
+                
+            }
+            div.inputsContainer{
+                padding: 3%; width:100%;
+            }
+            
+            .hideBurst{
+                display:none !important;
+            }
+            
+            @media screen and (max-width:600px){
+   
+                }
+            }
+            .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+         
+            .dropdown-content p{
+                padding: 12px 16px;
+            }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+            .dropdown-content p:hover {
+ background-color:azure;
+}
+        </style>
+        
+
+             
+             <script>
+
+function myFunction() {
+var link = document.getElementById("link").value;
+  document.getElementById("plpContainer").setAttribute("style", "background-image: url(" + link + ")"); 
+}
+
+                 function myFunction2() {
+var link2 = document.getElementById("link2").value;
+  document.getElementById("plpContainerMobile").setAttribute("style", "background-image: url(" + link2 + ")"); 
+}
+    
+</script>
+
+        
+                   <div class="inputsContainer">
+             <div ><h1>NPC Email Builder</h1> <div style="display:table-cell; vertical-align: middle; padding: 20px 10px;" class="dropdown">
+  
+  </div>
+
+                 <label class="inputs">Desktop Image<br><input class="emailBuilderInput" id="link" type="text"></label>
+
+<button class="submit" onclick="myFunction()">Update Image</button>
+             <br>
+                 <label class="inputs">Mobile Image<br><input class="emailBuilderInput" id="link2" type="text"></label>
+
+<button class="submit" onclick="myFunction2()">Update Image</button>
+                 <br>
+           
+        <label class="inputs">Burst Copy<br><input class="emailBuilderInput" type="textarea" id="burstCopyInput" onkeyup="burstCopyFunction()"></label><br>
+             <button class="submit hideBurstButton" style="border-radius:999px">Hide Burst</button><button class="submit showBurstButton" style="border-radius:999px">Show Burst</button>
+             
+                 <label class="inputs"><br>Eyebrow Copy<br><input class="emailBuilderInput" type="textarea" id="eyebrowCopyInput" onkeyup="eyebrowCopyFunction()"></label>
+              <label class="inputs"><br>H1 Copy<br><input class="emailBuilderInput" type="textarea" id="h1CopyInput" onkeyup="h1CopyFunction()"></label>
+    <br>
+             
+             <label class="inputs"><br>Body Copy<br><input class="emailBuilderInput" type="textarea" id="bodyCopyInput" onkeyup="bodyCopyFunction()"></label>
+
+
+
+       
+    
+<label class="inputs"><br>Terms & Conditions Link<br><input class="emailBuilderInput" id="linkInput" type="text" onkeyup="changeLinkFuntion()"></label><button class="submit" id="submit">Change Link</button><br>
+          
+             
+        <br>
+             
+    
+        
+          
+<br><br>
+
+
+        
+						
+              <a style="background-color: #c028b9; color: white; text-decoration: none; padding: 2% 3%; border-radius: 999px" href="#" id="downloadLink">Download HTML</a>
+        
+        
+    
+    <script>
+  function downloadInnerHtml(filename, elId, mimeType) {
+    var elHtml = document.getElementById(elId).innerHTML;
+    var link = document.createElement('a');
+    mimeType = mimeType || 'text/html';
+
+    link.setAttribute('download', filename);
+    link.setAttribute('href', 'data:' + mimeType  +  ';charset=utf-8,' + encodeURIComponent(elHtml));
+    link.click(); 
+}
+
+var fileName =  'PLP.html'; // You can use the .txt extension if you want
+        
+        $('#downloadLink').click(function(){
+    downloadInnerHtml(fileName, 'emailPreview','text');
+});
+    </script>
+  </div>
+        </div>
+        <div id="emailPreviewWrapper" class="emailPreviewWrapper"  style="width: 100%;position:relative;">
+           
+        <div id="emailPreview">
+     
+<!--PLP-->
+<div id="monthOfThanks" class="emailTemplate"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.ooorg/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<style>
+    <link rel="preconnect"href="https://fonts.googleapis.com"><link rel="preconnect"href="https://fonts.gstatic.com"crossorigin><link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap"rel="stylesheet">.category-intro .col-xs-12 .col-sm-10 .col-md-9 .col-lg-10 .category-text {
+        width: 100vw !important;
+    }
+
+    .cat__content {
+        width: 100vw;
+    }
+
+    .burst {
+        width: max-content;
+        display: flex;
+        background-color: #fff;
+        padding: 0.75% 1.5%;
+        border-radius: 5px;
+        color: #1b208f;
+        font-family: red hat text, tahoma, sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        position: relative;
+        top: 5%;
+        left: 0px;
+
+    }
+
+    .container-inner {
+        padding: 0px;
+    }
+
+    .row .center-content {
+        width: 100vw;
+    }
+
+    .category-header .category-intro {
+        padding: 0px;
+        width: 100vw;
+    }
+
+    h1 {
+        font-weight: 300;
+        font-size: 2.5em;
+        font-family: red hat text, tahoma, sans-serif;
+        text-align: left;
+        line-height: 1em;
+        margin: 1.5% 0%;
+  
+    }
+
+    .text-block {
+        font-family: red hat text, tahoma, sans-serif;
+        font-size: 20px;
+        padding: 0px;
+        margin: 0px;
+        line-height: 30px;
+    }
+
+    .plpContainer {
+        width: 100vw;
+        flex-wrap: wrap;
+        background-image: url(https://is1.pens.com/is//image/NatPenVegas/PLP-DesktopCustom-Pens-?qlt=99&fmt=png-alpha);
+        height: 300px;
+        background-size: cover;
+        background-position: right;
+        text-align: left;
+    }
+
+    .textBlock {
+        width: 1540px;
+        margin: auto;
+        padding: 2% 5%;
+
+
+    }
+    
+         .hvr-grow {
+                    display: inline-block;
+                    vertical-align: middle;
+                    -webkit-transform: perspective(1px) translateZ(0);
+                    transform: perspective(1px) translateZ();
+                    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                    -webkit-transition-duration: .3s;
+                    transition-duration: .3s;
+                    -webkit-transition-property: transform;
+                    transition-property: transform
+                }
+
+                .hvr-grow:active,
+                .hvr-grow:focus,
+                .hvr-grow:hover {
+                    -webkit-transform: scale(1.05);
+                    transform: scale(1.05)
+                }
+
+    .terms {
+        font-size: 12px;
+        padding: 1px;
+        position: relative;
+        bottom: 0px;
+        font-family: red hat text;
+        margin: auto;
+        position:relative;
+        color:#212A6275;
+        font-family: red hat text;
+         
+    }
+           .penCats {
+                    margin: 2%;
+                    text-align: center;
+                    font-weight: 500;
+                    color: black;
+               width: 160px;
+                }
+
+                .penCats:after {
+
+                    color: black;
+                }
+    
+    .visualNav{
+        margin: auto;
+        width: 100%;
+        text-align:center;
+        height:auto;
+    }
+    
+    .visualNav a{
+     text-decoration: none;
+        font-family: sans-serif;
+        color: black;
+    }
+
+    @media (max-width:1400px) {
+        .plpContainer {
+            background-position: left;
+        }
+
+        @media (max-width:900px) {
+            .plpContainer {
+                background-position: center !important;
+                background-image: url(https://is1.pens.com/is//image/NatPenVegas/PLP-MobileCustom-Pens-?qlt=99&fmt=png-alpha);
+                background-size: cover;
+            }
+
+            .textBlock {
+                width: 100%;
+                margin: unset;
+                
+
+            }
+
+            .text-block {
+                width: 40%;
+
+            }
+            
+            .terms{
+
+                position:relative;
+                bottom: 0px;
+            }
+
+
+            h1 {
+                font-weight: 300;
+                font-size: 2em;
+                font-family: red hat text, tahoma, sans-serif;
+                line-height: 1em;
+                margin: unset;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                width: 100%;
+                
+            }
+
+            .text-block {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            .hide {
+                display: block !important;
+            }
+           
+            
+            .visualNav{
+            display:inline-flex;
+                overflow-x:scroll !important;
+                overflow:hidden;
+   height:200px;
+                flex-wrap: nowrap;
+                width:1000px;
+                font-size:14px;
+            }
+        }
+        
+        @media (max-width: 374px) {
+            h1{
+                font-size:1.7em;
+            }
+        }
+</style>
+
+
+
+
+
+
+<div alt="" class="plpContainer" id="plpContainer">
+<div class="textBlock" style="color:#212A62;">
+  <div class="burst" id="burstDiv"><strong id="burstCopy">Up to 25% OFF</strong></div>
+            <p id="eyebrowCopy" class="text-block"></p>
+        <h1 id="h1Copy">Spread the cheer<br style="display:none" class="hide">with custom gifts
+        </h1>
+        <p id="bodyCopy" class="text-block">Save on pens, totes, and more in our Gift Collection</p>
+
+<div class="terms"><a href="" class="terms" id="mainLink">Terms & Conditions Apply</a></div>
+</div></div>
+</div>
+    <div alt="" class="plpContainer" style="display:none;" id="plpContainerMobile">
+<div class="textBlock" style="color:#212A62;">
+<div class="burst" id="burstDiv"><strong id="burstCopy">Up to 25% OFF</strong></div>
+            <p id="eyebrowCopy" class="text-block"></p>
+        <h1 id="h1Copy">Spread the cheer<br style="display:none" class="hide">with custom gifts
+        </h1>
+        <p id="bodyCopy" class="text-block">Save on pens, totes, and more in our Gift Collection</p>
+
+<div class="terms"><a href="" class="terms" id="mainLink">Terms & Conditions Apply</a></div>
+</div></div>
+</div>
+        
+
+   
+   
+    <br></div></div></div>
+</html>
+
+
+
